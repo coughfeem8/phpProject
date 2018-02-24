@@ -1,0 +1,33 @@
+:root{
+    --pale-gold:#c0b286;
+    --silk:#dcd0d0;
+    --paper:#f4f4f4;
+    --charcoal:#373737;
+}
+.grid{
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+.name>h1{
+text-align: center;
+grid-column: 1/4;
+  color: var(--silk);
+}
+
+
+.menu_bar{
+background: var(--pale-gold);
+text-align: center;
+padding: 1em;
+grid-row: 2;
+grid-column: 1/4;
+}
+
+.menu_bar>td{
+font-size: medium;
+font
+padding: 5px 50px;
+color: var(--charcoal);
+}
