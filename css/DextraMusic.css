@@ -1,0 +1,35 @@
+body{
+--grain: #d7cec7;
+--blackboard: #565656;
+--oxblood: #76323f;
+--tan: #c09f80;
+background: var(--grain);
+}
+
+ .grid{
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ grid-gap: 10px;
+ }
+
+.header{
+grid-column: 3;
+background:var(--oxblood);
+border-radius:25%;
+}
+.name>h1{
+background: var(--tan);
+grid-column: 2;
+color: var(--grain);
+
+}
+.songList{
+grid-row: 2;
+grid-column: 3;
+}
+.footer{}
+
+
+table{
+text-align: center;
+}

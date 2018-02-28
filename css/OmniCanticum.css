@@ -1,33 +1,65 @@
-:root{
+body{
     --pale-gold:#c0b286;
     --silk:#dcd0d0;
     --paper:#f4f4f4;
     --charcoal:#373737;
+
+    background: var(--silk);
+
 }
 .grid{
 display: grid;
-grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, auto);
 }
 
+.header{
+    grid-row:1;
+    grid-column: 1/6;
+}
 
 .name>h1{
+font-family: Aclonica;
+background: var(--charcoal);
 text-align: center;
-grid-column: 1/4;
-  color: var(--silk);
+grid-column;
+color: var(--paper);
 }
 
 
 .menu_bar{
 background: var(--pale-gold);
 text-align: center;
-padding: 1em;
-grid-row: 2;
-grid-column: 1/4;
+padding: 10px;
+grid-row: 1;
+grid-column: 1/5;
 }
 
-.menu_bar>td{
+a{
 font-size: medium;
-font
-padding: 5px 50px;
+font-weight:bold;
+padding: 10px 50px;
 color: var(--charcoal);
+transition: .5s;
+}
+a:hover{
+background: var(--charcoal);
+color:var(--paper);
+}
+
+.photo{
+grid-column: 3;
+background: var(--pale-gold);
+padding: 100px 100px;
+border-radius: 100%
+}
+
+.music-list{
+background: var(--pale-gold);
+grid-row :4;
+grid-column: 2/5;
+}
+th{
+align-items: center;
 }
