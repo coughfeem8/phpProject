@@ -9,7 +9,9 @@ class AccountList
 
 
     function __construct($newUser){
-        # code...
+        if ($newUser === null) {
+          $newUser = new UserAcount();
+        }
         
     }
 }

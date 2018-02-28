@@ -1,16 +1,39 @@
-:root{
+body{
 --navyBlue:#0f1626;
 --leather:#ab987a;
---coralal:#ff533d;
---navyBlue:#f5f5f5;
+--coral:#ff533d;
+--eggShell:#f5f5f5;
+background: var(--coral);
+;
 }
+ .grid{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 10px;
+ }
 
-.grid{
-display: grid;
-grid-template-columns: 40% 60%;
+.header{
+grid-column: 1;
+background:var(--leather);
+
 }
+.name>h1{
+text-align: Left;
 
-.header{}
-.name{}
-.menu_bar{}
+background: var(--tan);
+grid-column: 1;
+color: ;
+
+}
+.songList{
+grid-row: 2;
+grid-column: 1;
+}
 .footer{}
+
+
+table{
+background:
+font-size: medium;
+text-align: center;
+}

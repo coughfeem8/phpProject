@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Omni</title>
-        <link rel="stylesheet" type="text/css" href="css/OmniCanticum.css" >
+        <link rel="stylesheet" type="text/css" href="css/Omni.css" >
     </head>
     <body>
       <div class="grid">
@@ -14,17 +14,21 @@
 
             <div class="menu_bar">
               <tr>
-                <td><a href="omniMusic/purchase.html">Purchase</a></td>
-                <td><a href="omniMusic/index.html">My Library</a></td>
-                <td><a href="omniMusic/user.html">Account</a></td>
+                <td><a href="php/websites/omni/purchase.php">Purchase</a></td>
+                <td><a href="index.php">My Library</a></td>
+                <td><a href="php/websites/omni/user.php">Account</a></td>
               </tr>
             </div>
         </div>
         <div class="photo">
-                PHOTO
-                HERE
+              name
         </div>
         <div class="music-list">
+          <form class="songlistForm" action="index.html" method="post">
+            playlist name: remember to select songs first</br>
+            <input type="button" onclick="" value="add Playlist">
+            <input type="text" name="" value="">
+            <input type="button" onclick="" value="Remove">
             <table>
                 <tr>
                     <th>
@@ -34,6 +38,7 @@
                     </th>
                 </tr>
             </table>
+            </form>
         </div>
       </div>
     </body>
